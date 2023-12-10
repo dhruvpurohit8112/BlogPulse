@@ -14,10 +14,10 @@ The results show the calculated sentiment index, fog index and the overall senti
 ## Usage
 The code for this project is written in Python and uses the following libraries:
 
-Pandas
-Numpy
-NLTK 
-Any other libraries used for scraping Multiprocessing
+* Pandas
+* Numpy
+* NLTK 
+* Any other libraries used for scraping Multiprocessing
 
 To run the code, clone the repository and run the python code analytics.py.
 
