@@ -1,27 +1,30 @@
-# Sentiment-Analysis-Project-with-Multiprogramming-main
+## Sentiment-Analysis-Project-with-Multiprogramming
  
 This project aims to classify the sentiment of blog post data as positive or negative using predefined positive and negative word lists and calculate various readability indexes such as sentiment index, fog index etc. Multiprogramming is implemented to reduce the time of execution. The text data is collected from over 100+ blog pages.
 
-Data
+## Data
 The data used in this project is a collection of blog posts. The data includes the text of the posts. The data is scraped from over 100+ blog pages.
 
-Methods
+## Methods
 The sentiment analysis is performed by counting the number of positive and negative words in the text and classifying the text as positive or negative based on the ratio of positive words to negative words. The readability indexes such as sentiment index, fog index etc. are calculated using predefined formulas. Multiprogramming is implemented to run multiple processes in parallel, reducing the time of execution.
 
-Results
+## Results
 The results show the calculated sentiment index, fog index and the overall sentiment of the blog post (positive or negative). The execution time is also reported and compared to the execution time without multiprogramming.
 
-Usage
+## Usage
 The code for this project is written in Python and uses the following libraries:
 
-Pandas Numpy NLTK Any other libraries used for scraping Multiprocessing
+Pandas
+Numpy
+NLTK 
+Any other libraries used for scraping Multiprocessing
 
 To run the code, clone the repository and run the python code analytics.py.
 
-Conclusion
+## Conclusion
 This project demonstrates how to classify the sentiment of blog posts using predefined positive and negative word lists, calculate various readability indexes using formulas and reduce the execution time using multiprogramming. The approach can be applied to other forms of text data. The calculated readability indexes such as sentiment index, fog index etc. can be useful in understanding the readability level of text data. Additionally, the sentiment analysis can be very useful in understanding public opinion and providing valuable insights. Multiprogramming can also be applied to other projects to improve execution time.
 
-Functions and its roles:
+## Functions and its roles:
 Scraper: It is the main function that is scraping from the URLS. Beautiful Soup library is used for this purpose. Multiprogramming concept is used to reduce the time (approximately by 70-80%). Hence, a list is passed which contains first and last page no of that batch (Eg: [1,5] i.e. this batch will process pages 1-4. Similarly different batches will run parallely). All the results are stored with the filename of url_id as asked.
 
 Note: Some pages were not available and hence that pages were dropped
@@ -60,11 +63,12 @@ analysis: This function calculates all the variables including gunning fog index
 
 cleaned_word_ops: This will calculate the word count in cleaned blog body (i.e. without stop words)
 
-NOTE: All the variables are determined on the blog body. Only word count is determined on cleaned blog body (i.e. without having stop words)
+## NOTE: All the variables are determined on the blog body. Only word count is determined on cleaned blog body (i.e. without having stop words)
+
 run_parallel_2: The analysis process can also be multiprocessed which will reduce time by 70% but will require more memory. If avaliable we can implement using this function. For now we are performing it in a single process only.
 
 save: This will save our output file in the desired format
 
 script function: Contains series of function calls
 
-OUTPUT: Scraped data will be stored under scraped data folder and output is stored as Output.csv
+## OUTPUT: Scraped data will be stored under scraped data folder and output is stored as Output.csv
